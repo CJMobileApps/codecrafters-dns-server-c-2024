@@ -16,14 +16,14 @@ int main() {
     printf("Logs from your program will appear here!\n");
 
     // Uncomment this block to pass the first stage
-//  int udpSocket, client_addr_len;
-//	struct sockaddr_in clientAddress;
-//	
-//	udpSocket = socket(AF_INET, SOCK_DGRAM, 0);
-//	if (udpSocket == -1) {
-//		printf("Socket creation failed: %s...\n", strerror(errno));
-//		return 1;
-//	}
+  int udpSocket, client_addr_len;
+	struct sockaddr_in clientAddress;
+
+	udpSocket = socket(AF_INET, SOCK_DGRAM, 0);
+	if (udpSocket == -1) {
+		printf("Socket creation failed: %s...\n", strerror(errno));
+		return 1;
+	}
 //	
 //	// Since the tester restarts your program quite often, setting REUSE_PORT
 //	// ensures that we don't run into 'Address already in use' errors
